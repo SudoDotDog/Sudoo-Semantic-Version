@@ -1,0 +1,41 @@
+{
+  "name": "@sudoo/semantic-version",
+  "version": "1.1.0",
+  "description": "AWS Config for Node",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Sudoo-Semantic-Version.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Sudoo-Semantic-Version/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Sudoo-Semantic-Version#readme",
+  "peerDependencies": {
+    "aws-sdk": "*"
+  },
+  "devDependencies": {
+    "@sudoo/build-utils": "^1.0.0",
+    "@sudoo/license": "^1.1.0",
+    "@sudoo/triforce": "^2.9.29"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
