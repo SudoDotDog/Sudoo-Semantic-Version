@@ -4,4 +4,6 @@
  * @description Index
  */
 
+export * from "./compare";
 export * from "./version";
+

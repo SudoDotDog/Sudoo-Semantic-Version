@@ -12,7 +12,7 @@ import { SemanticVersion } from "../../src";
 describe('Given {SemanticVersion} Class', (): void => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const chance: Chance.Chance = new Chance('aws-config-config');
+    const chance: Chance.Chance = new Chance('semantic-version-version');
 
     it('should be able to create from string', (): void => {
 

@@ -16,6 +16,11 @@ export class SemanticVersion {
         return new SemanticVersion(splited[0], splited[1], splited[2]);
     }
 
+    public static fromComponents(major: number, minor: number, patch: number): SemanticVersion {
+
+        return new SemanticVersion(major, minor, patch);
+    }
+
     private readonly _major: number;
     private readonly _minor: number;
     private readonly _patch: number;
